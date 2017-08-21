@@ -1,0 +1,59 @@
+.header {
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+  min-height: 813px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 230px auto 55px;
+    width: 708px;
+    font-family: Exo-Thin, Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    line-height: 75px;
+  }
+}
+
+.header__play {
+  width: 59px;
+  height: 59px;
+  background: url(../img/play.png) no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.header__play:hover {
+  background: url(../img/play-hover.png) no-repeat;
+}
+
+.header__try {
+  position: relative;
+  cursor: pointer;
+  width: 190px;
+  height: 50px;
+  background-color: #ff6d6d;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header__try:hover {
+  background-color: #ff454a;
+}
+
+.header__try::before {
+  width: 210px;
+  position: absolute;
+  content: '* No need to add cards details';
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #282828;
+  text-transform: none;
+  top: 60px;
+  left: -19px;
+}
