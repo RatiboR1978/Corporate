@@ -414,7 +414,6 @@ img {
 
 .header {
   background-size: cover;
-  min-height: 813px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -458,7 +457,11 @@ img {
   color: white;
   text-transform: uppercase;
   font-family: Exo-Regular, Arial, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-bottom: 136px; }
+  @media (min-width: 1520px) {
+    .header__try {
+      margin-bottom: 255px; } }
 
 .header__try:hover {
   background-color: #ff454a; }
