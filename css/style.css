@@ -413,7 +413,6 @@ img {
   clear: both; }
 
 .header {
-  background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
   min-height: 813px;
   display: -webkit-box;
@@ -443,7 +442,8 @@ img {
   background: url(../img/play.png) no-repeat;
   border: none;
   cursor: pointer;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  outline: none; }
 
 .header__play:hover {
   background: url(../img/play-hover.png) no-repeat; }
@@ -474,78 +474,69 @@ img {
   top: 60px;
   left: -19px; }
 
-.instagram__title {
+.is_overlay {
+  display: block;
+  width: 100%;
+  height: 110%; }
+
+.is_overlay video {
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  z-index: -100;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover; }
+
+.awesome {
+  background-color: #f6f5f3;
+  padding: 140px 0 185px;
+  position: relative; }
+  .awesome h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #282828;
+    margin: 20px 0 90px; }
+
+.awesome__new {
   text-align: center;
-  font-family: rufina-bold-webfont, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 35px; }
+  font-size: 16px;
+  color: #ff6d6d; }
 
-.instagram__range {
-  margin-bottom: 68px; }
-  .instagram__range input {
-    display: block;
-    margin: 0 auto; }
+.awesome__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .awesome__wrap article {
+    width: 286px;
+    text-align: center;
+    line-height: 26px; }
 
-input[type='range'] {
-  -webkit-appearance: none;
-  background-color: #dcdcdc;
-  width: 480px;
-  height: 1px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  cursor: pointer;
-  outline: none; }
+.awesome__pens {
+  width: 291px;
+  height: 329px;
+  background: url("../img/pen.png") no-repeat;
+  position: absolute;
+  top: -40px; }
 
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #b2ae7e;
-  height: 21px;
-  width: 20px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%; }
+.awesome__headphones {
+  width: 291px;
+  height: 329px;
+  background: url("../img/headphones.png") no-repeat;
+  position: absolute;
+  top: -4px;
+  right: 0; }
 
-.instagramm_img {
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas: "a b b c c d" "f b b g h i";
-  height: 599px; }
-
-.instagram__items {
-  min-height: 300px; }
-
-.instagram__item1 {
-  background: url("../img/inst5.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item2 {
-  grid-area: b;
-  background: url("../img/inst8.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item3 {
-  grid-area: c;
-  background: url("../img/inst9.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item4 {
-  background: url("../img/inst12.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item5 {
-  background: url("../img/inst6.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item6 {
-  background: url("../img/inst10.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item7 {
-  background: url("../img/inst11.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item8 {
-  background: url("../img/inst13.jpg") no-repeat;
-  background-size: cover; }
+.awesome__glass {
+  width: 291px;
+  height: 329px;
+  background: url("../img/glass.png") no-repeat;
+  position: absolute;
+  bottom: -205px;
+  right: 0; }
 
 .platforms {
   min-height: 722px;
@@ -556,7 +547,10 @@ input[type='range']::-webkit-slider-thumb {
 
 .platforms__text {
   padding: 190px 150px;
-  width: 60%; }
+  width: 60%;
+  position: relative;
+  background-color: #fff;
+  z-index: 100; }
   .platforms__text h2 {
     font-size: 40px;
     color: #282828; }
@@ -564,6 +558,7 @@ input[type='range']::-webkit-slider-thumb {
       color: #ff6d6d; }
 
 .platforms__block {
+  z-index: 100;
   width: 40%;
   background: url("../img/triangle.jpg") no-repeat;
   background-size: cover; }
@@ -574,72 +569,41 @@ input[type='range']::-webkit-slider-thumb {
 
 .platforms__par {
   font-size: 16px;
-  color: #282828; }
+  color: #282828;
+  line-height: 26px; }
 
-.page-content {
-  margin-top: 185px;
-  margin-bottom: 100px; }
-
-.page-content__wrapper {
+.resposive-design {
+  background: url("../img/bg3.jpg") no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-align-content: space-between;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-  width: 830px;
-  height: 3255px;
-  padding: 30px; }
-  .page-content__wrapper .page-content__block {
-    width: 400px;
-    margin: 0 0 30px 34px; }
-    .page-content__wrapper .page-content__block img {
-      width: 100%;
-      display: block; }
-
-.page-content__content {
-  display: block; }
-  .page-content__content h3 {
-    text-align: center;
-    font-family: rufina-bold-webfont, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 35px; }
-  .page-content__content p {
-    line-height: 26px;
-    color: #898989; }
-  .page-content__content time {
-    text-align: center;
-    margin: 0 auto; }
-
-.page-content__link,
-.page-content__time {
-  text-align: center; }
-
-.page-content__link {
-  margin-top: 27px;
-  font-family: quattrocento_sansitalic, Arial, sans-serif;
-  font-size: 12px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 93px 0 105px;
+  z-index: 100;
   position: relative; }
-  .page-content__link a {
-    color: #898989; }
 
-.page-content__link::before {
-  content: '';
-  position: absolute;
-  width: 61px;
-  height: 2px;
-  background-color: #c4c4c4;
-  top: 18px;
-  left: 169px; }
+.resposive-design__text {
+  width: 500px;
+  margin-left: 70px; }
+  .resposive-design__text h2 {
+    font-size: 40px;
+    color: #282828; }
+    .resposive-design__text h2 span {
+      color: #ff6d6d; }
 
-.page-content__time {
-  margin-top: 40px;
-  font-size: 13px; }
-  .page-content__time span {
-    color: #898989; }
+.resposive-design__new {
+  font-size: 16px;
+  color: #ff6d6d; }
+
+.resposive-design__paragraph {
+  font-size: 16px;
+  color: #282828;
+  line-height: 26px; }
+
+.resposive-design__image {
+  margin-right: 70px; }
