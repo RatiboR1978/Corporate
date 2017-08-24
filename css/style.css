@@ -429,14 +429,17 @@ img {
           align-items: center; }
   .header h1 {
     margin: 230px auto 55px;
-    width: 556px;
+    max-width: 556px;
     font-family: Exo-Thin, Arial, sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     line-height: 75px; }
     @media (min-width: 725px) {
       .header h1 {
         width: 708px; } }
+    @media (min-width: 453px) {
+      .header h1 {
+        font-size: 60px; } }
 
 .header__play {
   width: 59px;
@@ -516,10 +519,30 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 20px; }
+  @media (min-width: 475px) {
+    .awesome__wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
   .awesome__wrap article {
     width: 286px;
     text-align: center;
@@ -557,7 +580,7 @@ img {
     font-size: 40px;
     color: #282828; }
   .awesome2 p {
-    width: 655px;
+    max-width: 655px;
     margin: 0 auto;
     line-height: 26px;
     margin-bottom: 108px; }
@@ -582,10 +605,30 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 20px; }
+  @media (min-width: 505px) {
+    .cofounder__wrap {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
 
 .cofounder__item {
   width: 330px;
@@ -743,8 +786,9 @@ img {
   display: flex; }
 
 .platforms__text {
-  padding: 190px 150px;
+  margin: 0 auto;
   width: 60%;
+  text-align: center;
   position: relative;
   background-color: #fff;
   z-index: 100; }
@@ -753,12 +797,19 @@ img {
     color: #282828; }
     .platforms__text h2 span {
       color: #ff6d6d; }
+  @media (min-width: 556px) {
+    .platforms__text {
+      width: 60%;
+      margin: 0;
+      padding: 190px 150px;
+      text-align: left; } }
 
-.platforms__block {
-  z-index: 100;
-  width: 40%;
-  background: url("../img/triangle.jpg") no-repeat;
-  background-size: cover; }
+@media (min-width: 556px) {
+  .platforms__block {
+    z-index: 100;
+    width: 40%;
+    background: url("../img/triangle.jpg") no-repeat;
+    background-size: cover; } }
 
 .platforms__new {
   font-size: 16px;
@@ -780,13 +831,15 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 93px 0 105px;
+  padding: 93px 20px 105px;
   z-index: 100;
   position: relative; }
 
 .resposive-design__text {
-  width: 500px;
-  margin-left: 70px; }
+  width: 500px; }
+  @media (min-width: 625px) {
+    .resposive-design__text {
+      margin-left: 70px; } }
   .resposive-design__text h2 {
     font-size: 40px;
     color: #282828; }
@@ -803,7 +856,11 @@ img {
   line-height: 26px; }
 
 .resposive-design__image {
-  margin-right: 70px; }
+  display: none; }
+  @media (min-width: 625px) {
+    .resposive-design__image {
+      display: block;
+      margin-right: 70px; } }
 
 .footer {
   background: url("../img/bg4.jpg") no-repeat;

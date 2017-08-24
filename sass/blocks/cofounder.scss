@@ -13,8 +13,14 @@
 
 .cofounder__wrap {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   padding: 0 20px;
+  @media (min-width: 505px) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .cofounder__item {

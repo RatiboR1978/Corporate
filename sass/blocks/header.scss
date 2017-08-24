@@ -9,10 +9,13 @@
     @media (min-width: 725px) {
       width: 708px;
     }
+    @media (min-width: 453px) {
+      font-size: 60px;
+    }
     margin: 230px auto 55px;
-    width: 556px;
+    max-width: 556px;
     font-family: Exo-Thin, Arial, sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     line-height: 75px;
   }

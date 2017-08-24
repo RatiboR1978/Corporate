@@ -4,8 +4,9 @@
 }
 
 .platforms__text {
-  padding: 190px 150px;
+  margin: 0 auto;
   width: 60%;
+  text-align: center;
   position: relative;
   background-color: #fff;
   z-index: 100;
@@ -16,13 +17,21 @@
       color: #ff6d6d;
     }
   }
+  @media (min-width: 556px) {
+    width: 60%;
+    margin: 0;
+    padding: 190px 150px;
+    text-align: left;
+  }
 }
 
 .platforms__block {
-  z-index: 100;
-  width: 40%;
-  background: url("../img/triangle.jpg") no-repeat;
-  background-size: cover;
+  @media (min-width: 556px) {
+    z-index: 100;
+    width: 40%;
+    background: url("../img/triangle.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 .platforms__new {

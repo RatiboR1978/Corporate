@@ -18,8 +18,14 @@
 
 .awesome__wrap {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 20px;
+  @media (min-width: 475px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   article {
     width: 286px;
     text-align: center;
