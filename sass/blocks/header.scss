@@ -6,8 +6,11 @@
 
 
   h1 {
+    @media (min-width: 725px) {
+      width: 708px;
+    }
     margin: 230px auto 55px;
-    width: 708px;
+    width: 556px;
     font-family: Exo-Thin, Arial, sans-serif;
     font-size: 60px;
     text-align: center;
@@ -40,7 +43,11 @@
   text-transform: uppercase;
   font-family: Exo-Regular, Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 136px;
+  margin-bottom: 61px;
+  @media (min-width: 1520px) {
+    margin-bottom: 136px;
+  }
+
   @media (min-width: 1520px) {
     margin-bottom: 255px;
   }

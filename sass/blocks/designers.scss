@@ -1,0 +1,110 @@
+.desingers {
+  padding: 100px 0 84px;
+  background-color: #323969;
+  text-align: center;
+  span {
+    color: #ff6d6d;
+  }
+  h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 105px;
+  }
+  p {
+    color: white;
+    font-family: Exo-Regular, Arial, sans-serif;
+    font-size: 16px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.desingers__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  @media (min-width: 978px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.desingers__input {
+  width: 231px;
+  height: 47px;
+  border: 1px solid white;
+  background-color: #464c77;
+  padding-left: 30px;
+  color: white;
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 28px;
+  margin-bottom: 30px;
+  @media (min-width: 978px) {
+    margin-bottom: 0;
+  }
+}
+
+.desingers__submit {
+  margin-top: 2px;
+  width: 256px;
+  height: 48px;
+  background-color: #ff6d6d;
+  border: 1px solid #ff6d6d;
+  border-radius: 3px;
+  outline: none;
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 50px;
+  box-shadow: 0 1px 3px 0 #121212;
+  position: relative;
+  cursor: pointer;
+}
+
+.wer {
+  float: right;
+  margin-right: 20%;
+}
+
+.desingers__sub {
+  position: relative;
+  margin-left: -29px;
+  @media (min-width: 978px) {
+    margin-left: 0;
+  }
+}
+
+
+.desingers__sub::after {
+  @media (min-width: 978px) {
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 41px;
+    background: url("../img/arrow.png") no-repeat;
+    top: -60px;
+    left: 0;
+  }
+}
+.desingers__sub::before {
+  @media (min-width: 978px) {
+    content: '30 days free trial for all.';
+    position: absolute;
+    top: -62px;
+    left: 21px;
+    font-family: Exo-Regular, Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    width: 192px;
+  }
+}
+
+.desingers__submit:hover {
+  background-color: #ff454a;
+}

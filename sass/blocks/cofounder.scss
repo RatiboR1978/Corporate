@@ -1,0 +1,45 @@
+.cofounder {
+  background: url("../img/bg2.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 115px;
+}
+
+.cofounder__box {
+  width: 76px;
+  height: 76px;
+  background-color: #4e4e5e;
+  margin: 0 auto;
+}
+
+.cofounder__wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.cofounder__item {
+  width: 330px;
+  text-align: center;
+  color: white;
+  h3 {
+    font-size: 22px;
+  }
+  span {
+    color: #ff6d6d;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  p{
+    font-family: Exo-Regular-Italic, Arial, sans-serif;
+    margin-bottom: 108px;
+  }
+}
+
+.cofounder__logos {
+  display: none;
+  @media (min-width: 725px) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 92px;
+  }
+}
