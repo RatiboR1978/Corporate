@@ -540,11 +540,11 @@ img {
   text-transform: uppercase;
   font-family: Exo-Regular, Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 61px; }
+  margin-bottom: 60px; }
   @media (min-width: 1520px) {
     .header__try {
       margin-bottom: 136px; } }
-  @media (min-width: 1520px) {
+  @media (min-width: 1642px) {
     .header__try {
       margin-bottom: 255px; } }
 
@@ -576,6 +576,7 @@ img {
   background-size: cover; }
 
 .awesome {
+  margin-top: -33px;
   background-color: #f6f5f3;
   padding: 140px 0 185px;
   position: relative; }
@@ -868,7 +869,7 @@ img {
   display: flex; }
 
 .platforms__text {
-  margin: 0 auto;
+  margin: 75px auto;
   width: 60%;
   text-align: center;
   position: relative;

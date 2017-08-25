@@ -46,12 +46,13 @@
   text-transform: uppercase;
   font-family: Exo-Regular, Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+
   @media (min-width: 1520px) {
     margin-bottom: 136px;
   }
 
-  @media (min-width: 1520px) {
+  @media (min-width: 1642px) {
     margin-bottom: 255px;
   }
 }
