@@ -1,4 +1,7 @@
 $(function () {
+
+    /* Кнопка для видео
+    ========================*/
     var video = $("video"),
         pauseButton = $("#pause");
     pauseButton.bind('click', function() {
@@ -12,8 +15,9 @@ $(function () {
         }
     });
 
-
-
+    /* Wow.js
+     ========================*/
+    new WOW().init();
 
 
 });

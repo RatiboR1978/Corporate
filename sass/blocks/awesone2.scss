@@ -1,19 +1,22 @@
 .awesome2 {
   padding-top: 106px;
   text-align: center;
-  span {
-    color: #ff6d6d;
-  }
   h2 {
   font-size: 40px;
   color: #282828;
   }
-  p {
-    max-width: 655px;
-    margin: 0 auto;
-    line-height: 26px;
-    margin-bottom: 108px;
-  }
+}
+
+.awesome2__new {
+  color: #ff6d6d;
+  margin: 0;
+}
+
+.awesome2__text {
+  max-width: 655px;
+  margin: 0 auto;
+  line-height: 26px;
+  margin-bottom: 108px;
 }
 
 .awesome2__img {

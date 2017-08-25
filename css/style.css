@@ -412,6 +412,82 @@ img {
   display: table;
   clear: both; }
 
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft; }
+
 .header {
   background-size: cover;
   display: -webkit-box;
@@ -574,16 +650,19 @@ img {
 .awesome2 {
   padding-top: 106px;
   text-align: center; }
-  .awesome2 span {
-    color: #ff6d6d; }
   .awesome2 h2 {
     font-size: 40px;
     color: #282828; }
-  .awesome2 p {
-    max-width: 655px;
-    margin: 0 auto;
-    line-height: 26px;
-    margin-bottom: 108px; }
+
+.awesome2__new {
+  color: #ff6d6d;
+  margin: 0; }
+
+.awesome2__text {
+  max-width: 655px;
+  margin: 0 auto;
+  line-height: 26px;
+  margin-bottom: 108px; }
 
 .awesome2__img {
   display: block;
@@ -661,19 +740,22 @@ img {
   padding: 100px 0 84px;
   background-color: #323969;
   text-align: center; }
-  .desingers span {
-    color: #ff6d6d; }
   .desingers h2 {
     font-size: 40px;
     color: white;
     margin-bottom: 105px; }
-  .desingers p {
+
+.desingers__new {
+  color: #ff6d6d;
+  margin: 0; }
+
+.desingers__text {
+  color: white;
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 16px; }
+  .desingers__text a {
     color: white;
-    font-family: Exo-Regular, Arial, sans-serif;
-    font-size: 16px; }
-    .desingers p a {
-      color: white;
-      text-decoration: underline; }
+    text-decoration: underline; }
 
 .desingers__form {
   display: -webkit-box;

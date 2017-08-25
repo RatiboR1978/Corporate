@@ -2,22 +2,25 @@
   padding: 100px 0 84px;
   background-color: #323969;
   text-align: center;
-  span {
-    color: #ff6d6d;
-  }
   h2 {
     font-size: 40px;
     color: white;
     margin-bottom: 105px;
   }
-  p {
+}
+
+.desingers__new {
+  color: #ff6d6d;
+  margin: 0;
+}
+
+.desingers__text {
+  color: white;
+  font-family: Exo-Regular, Arial, sans-serif;
+  font-size: 16px;
+  a {
     color: white;
-    font-family: Exo-Regular, Arial, sans-serif;
-    font-size: 16px;
-    a {
-      color: white;
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 }
 
